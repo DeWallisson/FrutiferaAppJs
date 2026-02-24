@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frutífera</title>
+  <!-- Bootstrap -->
+  <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Frutífera Cadastro</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./frutifera.html">Minhas Frutíferas</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <!-- Campo de pesquisa -->
+    <div class="mb-3">
+      <label for="pesquisarInput" class="form-label">Pesquise</label>
+      <input type="text" class="form-control" id="pesquisarInput" placeholder="Nome da Fruta" name="pesquisarInput">
+    </div>
+    <!-- Botão de pesquisa -->
+    <button type="button" class="btn btn-primary" id="pesquisarButton" name="pesquisarButton">Pesquisar</button>
+
+    <!-- Botão de adicionar -->
+    <button type="button" class="btn btn-primary" id="adicionarButton" name="adicionarButton" data-bs-toggle="modal"
+      data-bs-target="#FrutiferaModal">Adicionar</button>
+
+    <!-- listagem de Card -->
+    <div id="FrutiferasCardsContainer" class="row"></div>
+
+    <!-- Modal de inserção da Frutifera. -->
+    <div class="modal fade" id="FrutiferaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Nova Frutífera</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form id="FrutiferaForm">
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="NomeEspecie" class="form-label">Nome da Espécie</label>
+                <input type="text" class="form-control" name="NomeEspecie" id="NomeEspecie">
+              </div>
+              <div class="mb-3">
+                <label for="NomeCientifico" class="form-label">Nome Científico</label>
+                <input type="text" class="form-control" name="NomeCientifico" id="NomeCientifico">
+              </div>
+              <div class="mb-3">
+                <label for="producao" class="form-label">Safra - kg</label>
+                <input type="text" class="form-control" name="producao" id="producao">
+              </div>
+              <div class="mb-3">
+                <label for="DataPlantio" class="form-label">Data do Plantio</label>
+                <input type="text" class="form-control" name="DataPlantio" id="DataPlantio">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="submit" class="btn btn-primary">Salvar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="./frutifera.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2025 Company, Inc</p>
+      </footer>
+    </div>
+  </footer>
+
+  <!-- Bootstrap -->
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+
+  <!-- ToastFy -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+  <script src="./src/frutifera.js" type="module"></script>
+</body>
+
+</html>

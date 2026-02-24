@@ -1,0 +1,129 @@
+/* Paleta de Cores */
+:root {
+    --verde-principal: #2d5a27;
+    --verde-claro: #d4edda;
+    --marrom-terra: #5d4037;
+    --marrom-claro: #efebe9;
+    --branco: #ffffff;
+}
+
+body {
+    background-color: #f8fdf8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilização da Navbar */
+.navbar {
+    background-color: var(--verde-principal) !important;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--branco) !important;
+}
+
+/* Card de Cadastro */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-top: 5px solid var(--marrom-terra);
+}
+
+.card-title {
+    color: var(--verde-principal);
+    font-weight: bold;
+}
+
+/* Botão de Adicionar */
+.btn-primary {
+    background-color: var(--verde-principal);
+    border-color: var(--verde-principal);
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--marrom-terra);
+    border-color: var(--marrom-terra);
+    transform: scale(1.02);
+}
+
+/* Cards das Frutíferas */
+.frutifera-card {
+    border-left: 5px solid var(--verde-principal);
+    background-color: var(--branco);
+    transition: transform 0.2s;
+}
+
+.frutifera-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilo para a Idade */
+.badge-idade {
+    background-color: var(--marrom-claro);
+    color: var(--marrom-terra);
+    font-weight: 500;
+}
+
+/* Destaque para a idade */
+.card-text strong {
+    color: #2d5a27;
+}
+
+/* Botão de Remover */
+.btn-outline-danger {
+    color: #d9534f;
+    border-color: #d9534f;
+}
+
+.btn-outline-danger:hover {
+    background-color: #d9534f;
+    color: white;
+}
+
+/* Cor de fundo da página de listagem */
+body {
+    background-color: #f4f7f4; 
+}
+
+/* Customizando os Cards */
+.card {
+    border: none;
+    border-top: 4px solid #5d4037; /* Marrom no topo do card */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito de flutuar ao passar o mouse */
+}
+
+/* Título da Fruta */
+.card-title {
+    color: #2d5a27;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* Botão Excluir */
+.btn-outline-secondary {
+    color: #5d4037;
+    border-color: #5d4037;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #d9534f;
+    color: white;
+    border-color: #d9534f;
+}
+
+/* Estilizando o ID e Informações técnicas */
+.card-text {
+    font-size: 0.9rem;
+    color: #444;
+}
+
+/* Estilização do Link Home no Footer */
+footer .nav-link {
+    color: #000000 !important;
+    font-weight: 500;
+}

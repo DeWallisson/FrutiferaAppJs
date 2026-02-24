@@ -1,0 +1,22 @@
+/* Paleta de Cores */
+:root {
+    --verde-principal: #2d5a27;
+    --marrom-terra: #5d4037;
+    --marrom-claro: #efebe9;
+    --branco: #ffffff;
+}
+
+/* Estilização da Navbar */
+.navbar {
+    background-color: var(--verde-principal) !important;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--branco) !important;
+}
+
+/* Estilização do Link Home no Footer */
+footer .nav-link {
+    color: #000000 !important;
+    font-weight: 500;
+}
